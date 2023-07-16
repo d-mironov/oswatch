@@ -2556,9 +2556,11 @@ existing classes or even new classes with specific responsibilities.</val>
 <ref refid="d333c869-2414-11ee-81c3-8032538f65b9"/>
 <ref refid="a38353cd-2415-11ee-ad61-8032538f65b9"/>
 <ref refid="b9c57b9e-2415-11ee-89bd-8032538f65b9"/>
+<ref refid="d168702c-241c-11ee-b144-8032538f65b9"/>
 <ref refid="382b797a-2415-11ee-83ee-8032538f65b9"/>
 <ref refid="322f5c48-2416-11ee-ba9c-8032538f65b9"/>
 <ref refid="7c5901a1-2416-11ee-8c81-8032538f65b9"/>
+<ref refid="dddd17ff-241c-11ee-8b37-8032538f65b9"/>
 </reflist>
 </ownedPresentation>
 </Diagram>
@@ -2594,6 +2596,7 @@ existing classes or even new classes with specific responsibilities.</val>
 <reflist>
 <ref refid="3919c118-2415-11ee-a753-8032538f65b9"/>
 <ref refid="7d89db46-2416-11ee-a1f2-8032538f65b9"/>
+<ref refid="df832321-241c-11ee-b64e-8032538f65b9"/>
 </reflist>
 </specialization>
 <supplierDependency>
@@ -3329,6 +3332,9 @@ existing classes or even new classes with specific responsibilities.</val>
 <client>
 <ref refid="b9c55490-2415-11ee-ae3f-8032538f65b9"/>
 </client>
+<name>
+<val>Uses</val>
+</name>
 <presentation>
 <reflist>
 <ref refid="322f5c48-2416-11ee-ba9c-8032538f65b9"/>
@@ -3375,6 +3381,80 @@ existing classes or even new classes with specific responsibilities.</val>
 </presentation>
 <specific>
 <ref refid="a3832ce2-2415-11ee-ab1c-8032538f65b9"/>
+</specific>
+</Generalization>
+<Class id="d1680db9-241c-11ee-8019-8032538f65b9">
+<generalization>
+<reflist>
+<ref refid="df832321-241c-11ee-b64e-8032538f65b9"/>
+</reflist>
+</generalization>
+<name>
+<val>SubMenuItem</val>
+</name>
+<presentation>
+<reflist>
+<ref refid="d168702c-241c-11ee-b144-8032538f65b9"/>
+</reflist>
+</presentation>
+</Class>
+<ClassItem id="d168702c-241c-11ee-b144-8032538f65b9">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 434.55704875623877, 354.34220244446965)</val>
+</matrix>
+<top-left>
+<val>(0.0, 0.0)</val>
+</top-left>
+<width>
+<val>100.0</val>
+</width>
+<height>
+<val>60.0</val>
+</height>
+<diagram>
+<ref refid="5f45d7c5-2402-11ee-a99e-8032538f65b9"/>
+</diagram>
+<subject>
+<ref refid="d1680db9-241c-11ee-8019-8032538f65b9"/>
+</subject>
+</ClassItem>
+<GeneralizationItem id="dddd17ff-241c-11ee-8b37-8032538f65b9">
+<diagram>
+<ref refid="5f45d7c5-2402-11ee-a99e-8032538f65b9"/>
+</diagram>
+<horizontal>
+<val>0</val>
+</horizontal>
+<orthogonal>
+<val>0</val>
+</orthogonal>
+<subject>
+<ref refid="df832321-241c-11ee-b64e-8032538f65b9"/>
+</subject>
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 484.17292367908396, 122.05755855834047)</val>
+</matrix>
+<points>
+<val>[(0.0, 232.28464388612917), (0.0, 0.5598589033024268)]</val>
+</points>
+<head-connection>
+<ref refid="d168702c-241c-11ee-b144-8032538f65b9"/>
+</head-connection>
+<tail-connection>
+<ref refid="645bc588-2402-11ee-b304-8032538f65b9"/>
+</tail-connection>
+</GeneralizationItem>
+<Generalization id="df832321-241c-11ee-b64e-8032538f65b9">
+<general>
+<ref refid="645b72ba-2402-11ee-8479-8032538f65b9"/>
+</general>
+<presentation>
+<reflist>
+<ref refid="dddd17ff-241c-11ee-8b37-8032538f65b9"/>
+</reflist>
+</presentation>
+<specific>
+<ref refid="d1680db9-241c-11ee-8019-8032538f65b9"/>
 </specific>
 </Generalization>
 </gaphor>

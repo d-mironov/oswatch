@@ -47,7 +47,7 @@ class BoolMenuItem(MenuItem):
         return self._value
 
     @value.setter
-    def setter(self, value: bool) -> None:
+    def value(self, value: bool) -> None:
         self._value = value
 
 
@@ -60,7 +60,7 @@ class AppMenuItem(MenuItem):
 
 @dataclass
 class Menu:
-    _items: list[MenuItem]
+    _items: list[MenuItem] = field(default_factory=lambda: [])
     _current_item: int = field(default=0)
 
     def add_item(self, item: MenuItem) -> None:
