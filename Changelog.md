@@ -6,3 +6,6 @@
 
 ### 2023/07/18
 - Added some logic to the menu system concept
+
+### 2034/07/29
+- Wrote menu system concept in C++ with generic menu items
