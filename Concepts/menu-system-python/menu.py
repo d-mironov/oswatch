@@ -1,6 +1,6 @@
 from dataclasses import dataclass, field
-from typing import Callable
-
+from typing import Callable, Optional
+from rich import print
 
 class MenuEmptyException(Exception):
     pass
@@ -76,19 +76,26 @@ class Menu:
     def current_item_index(self) -> int:
         return self._current_item
 
-    def current_item(self) -> MenuItem:
+    def current_item(self) -> Optional[MenuItem]:
         if len(self._items) == 0:
-            raise MenuEmptyException
+            return None
         return self._items[self._current_item]
 
     def render(self) -> str:
         print("------------")
         for item in self._items:
-            print("> " if item.is_current() else "  ", end="")
-            print(item.get_title())
+            print(f"{'[r]' if item.is_current() else ''}{item.get_title()}")
+
+# @dataclass
+# class Manager:
+#     def notify(self, sender: Menu, event: str) -> None:
+#         pass
 
 @dataclass
 class MenuManager:
+    """
+    Mediator Pattern?
+    """
     _root_menu: Menu
     _cur_menu: Menu
 
